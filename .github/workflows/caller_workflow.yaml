@@ -10,6 +10,6 @@ on:
 
 jobs:
   call-reusable:
-    uses: tamtanns/Playground/.github/workflows/reusable_workflow.yml@main
+    uses: tamtanns/Playground/.github/workflows/reusable_workflow.yaml@main
     with:
       actor: ${{ inputs.actor }}

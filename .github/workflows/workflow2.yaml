@@ -1,0 +1,16 @@
+
+name: "Caller Workflow"
+
+on:
+  workflow_dispatch:
+    inputs:
+      actor:
+        description: "The person who will receive the greeting"
+        required: true
+        type: string
+
+jobs:
+  call-reusable:
+    uses: <YOUR_GITHUB_USERNAME>/reusable-workflows-demo/.github/workflows/reusable.yml@main
+    with:
+      actor: ${{ inputs.actor }}
